@@ -366,13 +366,13 @@ def main():
 def realesrgan2x(executable: str, input: str, output: str):
     process = subprocess.Popen([
         executable,
-        '-i',
+        "-i",
         input,
-        '-o',
+        "-o",
         output,
-        '-n',
-        'realesrgan-x4plus',
-        '-g0'
+        "-n",
+        "realesrgan-x4plus",
+        "-g0"
     ])
     process.wait()
 
